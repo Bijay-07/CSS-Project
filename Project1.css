@@ -1,0 +1,121 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    background-image: linear-gradient(-30deg, yellow, black 35%);
+}
+.navcontainer{
+    width: 100vw;
+    height: 60px;
+    background-image: linear-gradient(45deg, yellow, black 10%);
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    box-shadow: 0 3px 2px yellow;
+}
+#navlist{
+    width: 100%;
+    height: 60px;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#Name{
+    font-size: 50px;
+    color: yellow;
+    margin: 10px;
+}
+a{
+    color: yellow;
+}
+#anchor{
+    font-size: 30px;
+    margin: 10px;
+    display: flex;
+    gap: 20px;
+}
+.content{
+    width: 70%;
+    border-radius: 10px;
+    box-shadow: 3px 2px 30px yellow;
+    margin: auto;
+    color: yellow;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    overflow: hidden;
+}
+img{
+    border-radius: 30px;
+}
+.item1{
+    display: flex;
+    justify-content: space-around;
+}
+.item2{
+    display: flex;
+    justify-content: space-around;
+}
+.item3{
+    display: flex;
+    justify-content: space-around;
+}
+.box1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.box1 h2{
+    font-size: 50px;
+}
+.box1 h3{
+    font-size: 25px;
+}
+.box1 ul,ol{
+    font-size: 20px;
+}
+img{
+    transition: all 2s ease;
+}
+img:hover{
+    transform: scale(1.1, 1.1);
+    box-shadow: 2px 1px 30px yellow;
+}
+#last{
+    display: flex;
+    justify-content: center;
+}
+.download{
+    position: relative;
+    display: flex;
+}
+.download .overlay{
+    position:absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(128, 128, 128, 0.541);
+    border-radius: 30px;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 2s ease;
+}
+.download:hover .overlay{
+    opacity: 100%;
+}
+.footer1{
+    width: 100vw;
+    color: yellow;
+    font-size: 20px;
+    background-image: linear-gradient(45deg, yellow, black 10%);
+    text-align: center;
+}
+

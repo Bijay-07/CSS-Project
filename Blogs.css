@@ -1,0 +1,659 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100vw;
+    background-image: linear-gradient(-30deg, yellow, black 35%);
+    overflow-x: hidden;
+    overflow-y: auto;
+    display: flex;
+    gap: 40px;
+    flex-direction: column;
+}
+a{
+    color: yellow;
+    text-decoration: none;
+}
+.head{
+    display: flex;
+    color: yellow;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 10px;
+    gap: 10px;
+}
+.head .heading{
+    font-size: 30px;
+}
+.head .para{
+    font-size: 20px;
+}
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    width: 80%;
+    height: 55rem;
+    overflow: auto;
+    display: grid;
+    box-shadow: 0 0 30px yellow ;
+    border-radius: 20px;
+    gap: 20px;
+    justify-items: center;
+    align-items: center;
+}
+@media (min-width:790px){
+    .container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (min-width:1500px){
+    .container{
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+.box1{
+    width: 250px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    border: solid yellow 2px;
+    box-shadow: 0 0 30px yellow;
+    border-radius: 20px;
+    margin: 20px;
+}
+.box1 .photo{
+    width: 100%;
+    height: 50%;
+    box-shadow: 0px 2px 20px yellow;
+    border-radius: 20px;
+    transition: all 2s 0s ease;
+}
+.box1 .photo:hover{
+    transform: scale(1.1);
+}
+.box1 .photo img{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+.box1 .content{
+    width: 95%;
+    height: 50%;
+    justify-content: end;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin: 5px;
+}
+.box1 .boxhead{
+    color: yellow;
+    font-size: 15px;
+}
+.box1 .boxpara{
+    color: yellow;
+    font-size: 10px;
+}
+.box1 .boxid{
+    display: flex;
+    justify-content: space-between;
+    color: yellow;
+}
+.box1 .left{
+    display: flex;
+    gap: 10px;
+}
+.box1 .left img{
+    width: 35px;
+    height: 35px;
+    border-radius: 100px;
+    border: solid yellow 2px;
+}
+.box1 .left .identity{
+    font-size: 10px;
+}
+.box1 .boxid .right{
+    border: solid yellow 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    padding: 5px;
+    transition: all 1s 1s ease;
+}
+.box1 .right:hover{
+    box-shadow: 0 0 20px yellow;
+    transform: scale(1.1);
+}
+
+
+.box2{
+    width: 250px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    border: solid yellow 2px;
+    box-shadow: 0 0 30px yellow;
+    border-radius: 20px;
+    margin: 20px;
+}
+.box2 .photo{
+    width: 100%;
+    height: 50%;
+    box-shadow: 0px 2px 20px yellow;
+    border-radius: 20px;
+    transition: all 2s 0s ease;
+}
+.box2 .photo:hover{
+    transform: scale(1.1);
+}
+.box2 .photo img{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+.box2 .content{
+    width: 95%;
+    height: 50%;
+    justify-content: end;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin: 5px;
+}
+.box2 .boxhead{
+    color: yellow;
+    font-size: 15px;
+}
+.box2 .boxpara{
+    color: yellow;
+    font-size: 10px;
+}
+.box2 .boxid{
+    display: flex;
+    justify-content: space-between;
+    color: yellow;
+}
+.box2 .left{
+    display: flex;
+    gap: 10px;
+}
+.box2 .left img{
+    width: 35px;
+    height: 35px;
+    border-radius: 100px;
+    border: solid yellow 2px;
+}
+.box2 .left .identity{
+    font-size: 10px;
+}
+.box2 .boxid .right{
+    border: solid yellow 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    padding: 5px;
+    transition: all 1s 1s ease;
+}
+.box2 .right:hover{
+    box-shadow: 0 0 20px yellow;
+    transform: scale(1.1);
+}
+
+.box3{
+    width: 250px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    border: solid yellow 2px;
+    box-shadow: 0 0 30px yellow;
+    border-radius: 20px;
+    margin: 20px;
+}
+.box3 .photo{
+    width: 100%;
+    height: 50%;
+    box-shadow: 0px 2px 20px yellow;
+    border-radius: 20px;
+    transition: all 2s 0s ease;
+}
+.box3 .photo:hover{
+    transform: scale(1.1);
+}
+.box3 .photo img{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+.box3 .content{
+    width: 95%;
+    height: 50%;
+    justify-content: end;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin: 5px;
+}
+.box3 .boxhead{
+    color: yellow;
+    font-size: 15px;
+}
+.box3 .boxpara{
+    color: yellow;
+    font-size: 10px;
+}
+.box3 .boxid{
+    display: flex;
+    justify-content: space-between;
+    color: yellow;
+}
+.box3 .left{
+    display: flex;
+    gap: 10px;
+}
+.box3 .left img{
+    width: 35px;
+    height: 35px;
+    border-radius: 100px;
+    border: solid yellow 2px;
+}
+.box3 .left .identity{
+    font-size: 10px;
+}
+.box3 .boxid .right{
+    border: solid yellow 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    padding: 5px;
+    transition: all 1s 1s ease;
+}
+.box3 .right:hover{
+    box-shadow: 0 0 20px yellow;
+    transform: scale(1.1);
+}
+
+.box4{
+    width: 250px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    border: solid yellow 2px;
+    box-shadow: 0 0 30px yellow;
+    border-radius: 20px;
+    margin: 20px;
+}
+.box4 .photo{
+    width: 100%;
+    height: 50%;
+    box-shadow: 0px 2px 20px yellow;
+    border-radius: 20px;
+    transition: all 2s 0s ease;
+}
+.box4 .photo:hover{
+    transform: scale(1.1);
+}
+.box4 .photo img{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+.box4 .content{
+    width: 95%;
+    height: 50%;
+    justify-content: end;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin: 5px;
+}
+.box4 .boxhead{
+    color: yellow;
+    font-size: 15px;
+}
+.box4 .boxpara{
+    color: yellow;
+    font-size: 10px;
+}
+.box4 .boxid{
+    display: flex;
+    justify-content: space-between;
+    color: yellow;
+}
+.box4 .left{
+    display: flex;
+    gap: 10px;
+}
+.box4 .left img{
+    width: 35px;
+    height: 35px;
+    border-radius: 100px;
+    border: solid yellow 2px;
+}
+.box4 .left .identity{
+    font-size: 10px;
+}
+.box4 .boxid .right{
+    border: solid yellow 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    padding: 5px;
+    transition: all 1s 1s ease;
+}
+.box4 .right:hover{
+    box-shadow: 0 0 20px yellow;
+    transform: scale(1.1);
+}
+
+.box5{
+    width: 250px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    border: solid yellow 2px;
+    box-shadow: 0 0 30px yellow;
+    border-radius: 20px;
+    margin: 20px;
+}
+.box5 .photo{
+    width: 100%;
+    height: 50%;
+    box-shadow: 0px 2px 20px yellow;
+    border-radius: 20px;
+    transition: all 2s 0s ease;
+}
+.box5 .photo:hover{
+    transform: scale(1.1);
+}
+.box5 .photo img{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+.box5 .content{
+    width: 95%;
+    height: 50%;
+    justify-content: end;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin: 5px;
+}
+.box5 .boxhead{
+    color: yellow;
+    font-size: 15px;
+}
+.box5 .boxpara{
+    color: yellow;
+    font-size: 10px;
+}
+.box5 .boxid{
+    display: flex;
+    justify-content: space-between;
+    color: yellow;
+}
+.box5 .left{
+    display: flex;
+    gap: 10px;
+}
+.box5 .left img{
+    width: 35px;
+    height: 35px;
+    border-radius: 100px;
+    border: solid yellow 2px;
+}
+.box5 .left .identity{
+    font-size: 10px;
+}
+.box5 .boxid .right{
+    border: solid yellow 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    padding: 5px;
+    transition: all 1s 1s ease;
+}
+.box5 .right:hover{
+    box-shadow: 0 0 20px yellow;
+    transform: scale(1.1);
+}
+
+.box6{
+    width: 250px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    border: solid yellow 2px;
+    box-shadow: 0 0 30px yellow;
+    border-radius: 20px;
+    margin: 20px;
+}
+.box6 .photo{
+    width: 100%;
+    height: 50%;
+    box-shadow: 0px 2px 20px yellow;
+    border-radius: 20px;
+    transition: all 2s 0s ease;
+}
+.box6 .photo:hover{
+    transform: scale(1.1);
+}
+.box6 .photo img{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+.box6 .content{
+    width: 95%;
+    height: 50%;
+    justify-content: end;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin: 5px;
+}
+.box6 .boxhead{
+    color: yellow;
+    font-size: 15px;
+}
+.box6 .boxpara{
+    color: yellow;
+    font-size: 10px;
+}
+.box6 .boxid{
+    display: flex;
+    justify-content: space-between;
+    color: yellow;
+}
+.box6 .left{
+    display: flex;
+    gap: 10px;
+}
+.box6 .left img{
+    width: 35px;
+    height: 35px;
+    border-radius: 100px;
+    border: solid yellow 2px;
+}
+.box6 .left .identity{
+    font-size: 10px;
+}
+.box6 .boxid .right{
+    border: solid yellow 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    padding: 5px;
+    transition: all 1s 1s ease;
+}
+.box6 .right:hover{
+    box-shadow: 0 0 20px yellow;
+    transform: scale(1.1);
+}
+
+.box7{
+    width: 250px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    border: solid yellow 2px;
+    box-shadow: 0 0 30px yellow;
+    border-radius: 20px;
+    margin: 20px;
+}
+.box7 .photo{
+    width: 100%;
+    height: 50%;
+    box-shadow: 0px 2px 20px yellow;
+    border-radius: 20px;
+    transition: all 2s 0s ease;
+}
+.box7 .photo:hover{
+    transform: scale(1.1);
+}
+.box7 .photo img{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+.box7 .content{
+    width: 95%;
+    height: 50%;
+    justify-content: end;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin: 5px;
+}
+.box7 .boxhead{
+    color: yellow;
+    font-size: 15px;
+}
+.box7 .boxpara{
+    color: yellow;
+    font-size: 10px;
+}
+.box7 .boxid{
+    display: flex;
+    justify-content: space-between;
+    color: yellow;
+}
+.box7 .left{
+    display: flex;
+    gap: 10px;
+}
+.box7 .left img{
+    width: 35px;
+    height: 35px;
+    border-radius: 100px;
+    border: solid yellow 2px;
+}
+.box7 .left .identity{
+    font-size: 10px;
+}
+.box7 .boxid .right{
+    border: solid yellow 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    padding: 5px;
+    transition: all 1s 1s ease;
+}
+.box7 .right:hover{
+    box-shadow: 0 0 20px yellow;
+    transform: scale(1.1);
+}
+
+.box8{
+    width: 250px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    border: solid yellow 2px;
+    box-shadow: 0 0 30px yellow;
+    border-radius: 20px;
+    margin: 20px;
+}
+.box8 .photo{
+    width: 100%;
+    height: 50%;
+    box-shadow: 0px 2px 20px yellow;
+    border-radius: 20px;
+    transition: all 2s 0s ease;
+}
+.box8 .photo:hover{
+    transform: scale(1.1);
+}
+.box8 .photo img{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+.box8 .content{
+    width: 95%;
+    height: 50%;
+    justify-content: end;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin: 5px;
+}
+.box8 .boxhead{
+    color: yellow;
+    font-size: 15px;
+}
+.box8 .boxpara{
+    color: yellow;
+    font-size: 10px;
+}
+.box8 .boxid{
+    display: flex;
+    justify-content: space-between;
+    color: yellow;
+}
+.box8 .left{
+    display: flex;
+    gap: 10px;
+}
+.box8 .left img{
+    width: 35px;
+    height: 35px;
+    border-radius: 100px;
+    border: solid yellow 2px;
+}
+.box8 .left .identity{
+    font-size: 10px;
+}
+.box8 .boxid .right{
+    border: solid yellow 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    padding: 5px;
+    transition: all 1s 1s ease;
+}
+.box8 .right:hover{
+    box-shadow: 0 0 20px yellow;
+    transform: scale(1.1);
+}
+
+.footer1{
+    width: 100vw;
+    color: yellow;
+    font-size: 20px;
+    background-image: linear-gradient(45deg, yellow, black 10%);
+    text-align: center;
+}
